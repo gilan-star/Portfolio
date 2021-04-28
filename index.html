@@ -18,35 +18,35 @@
     <nav id="navbar">
         <div class="navbar__logo">
             <a href="">
-                <img src="imgs/logo_10.png" alt="">
+                <img src="imgs/logos/logo_10.png" alt="">
             </a>
         </div>        
         <ul class="navbar__menu">
-                <li><a href="">HOME</a></li>
-                <li><a href="">ABOUT</a></li>
-                <li><a href="">SKILLS</a></li>
-                <li><a href="">MY WORK</a></li>
-                <li><a href="">TESTIMONIAL</a></li>
-                <li><a href="">CONTACT</a></li>
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>SKILLS</li>
+            <li>MY WORK</li>
+            <li>TESTIMONIAL</li>
+            <li>CONTACT</li>
         </ul>
     </nav>
 
     <!-- Home -->
     <section id="home">
-        <img class="home__avatar" src="imgs/profile.jpg" alt="">
-        <div class="titles">HELLO, MY NAME IS GILAN</div>
-        <div class="descriptions">
+        <img class="home__avatar" src="imgs/profile pics/profile.jpg" alt="Gilan's profile photo">
+        <h1 class="titles">HELLO,<br> MY NAME IS GILAN</h1>
+        <h2 class="descriptions">
             A software Engineer. Frontend is central to everything I do. I love to work on meaningful projects with inspiring, creative people.
-        </div>
-        <button>Contact Me</button>
+        </h2>
+        <button class="home__contact">Contact Me</button>
     </section>
 
     <!-- About Me -->
     <section id="about">
-        <div class="titles">ABOUT ME</div>
-        <div class="descriptions">
+        <h1 class="titles">ABOUT ME</h1>
+        <p class="descriptions">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda similique nisi deleniti quam ut, dolores cumque quibusdam fuga id exercitationem iusto accusamus soluta rerum? Magnam recusandae eligendi ab dolore accusantium.
-        </div>
+        </p>
         <ul class="about__items">
             <li class="item">
                 <div class="item__icon">
@@ -67,111 +67,177 @@
                 <div class="item__title">Javascript</div>                
             </li>
         </ul>
-        <ul>
-            <li class="career">
-                <img src="imgs/ci.png" alt="">
-                <div class="info">
-                    <span class="name">Worked at RAY_US as Architectural Graphic Designer</span>
-                    <span class="time">2020 Feb - 2020 July</span>
-                </div>
-            </li>
-        </ul>
+        <div class="about__careers">
+            <div class="career">
+                <img src="imgs/logos/ci.png" alt="">                
+                <p class="name">Worked at RAY_US as Architectural Graphic Designer</p>
+                <p class="time">2020 Feb - 2020 July</p>
+            </div>
+            <div class="career">
+                <img src="imgs/logos/ci.png" alt="">                
+                <p class="name">Worked at RAY_US as Architectural Graphic Designer</p>
+                <p class="time">2020 Feb - 2020 July</p>
+            </div>
+        </div>
     </section>
 
     <!-- Skills -->
     <section id="skills">
-        <div class="titles">SKILLS</div>
-        <div class="subtitles">SKILLS & ATTRIBUTES</div>
-        <div class="descriptions">
+        <h1 class="titles">SKILLS</h1>
+        <h3 class="subtitles">SKILLS & ATTRIBUTES</h3>
+        <p class="descriptions">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae cumque dolorem soluta impedit consectetur et magni quidem, ipsum hic sequi modi autem? Sequi a obcaecati adipisci nihil nostrum optio aliquam.
-        </div>
-        <div class="skills__item">
-            <div class="item1">
-                <div class="item1__title">SKILLS</div>
-                <div class="item1__content">
-                    <div class="level">
-                        <span class="level__title">HTML</span>
-                        <span class="level__percentage">90%</span>
-                        <div class="level__bar"></div>
+        </p>
+        <div class="skillset">
+            <div class="skillset__left">
+                <h3 class="skillset__title">SKILLS</h3>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>HTML</span>
+                        <span>90%</span>
                     </div>
-                    <div class="level">
-                        <span class="level__title">CSS</span>
-                        <span class="level__percentage">90%</span>
-                        <div class="level__bar"></div>
-                    </div>
-                    <div class="level">
-                        <span class="level__title">JavaScript</span>
-                        <span class="level__percentage">90%</span>
-                        <div class="level__bar"></div>
+                    <div class="skill__bar">
+                        <div class="skill__value"></div>
                     </div>
                 </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>CSS</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>JavaScript</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value"></div>
+                    </div>
+                </div>                    
             </div>
-            <div class="item2">
-                <div class="item2__title">TOOLS</div>
-                <ul class="item2__content">
-                    <li>Photoshop</li>
-                    <li>Illustrator</li>
-                    <li>Visual Studio</li>
-                    <li>3ds Max</li>
-                    <li>SketchUp</li>
-                </ul>
-            </div>
-            <div class="item3">
-                <div class="item3__title">ETC</div>
-                <ul class="item3__content">
-                    <li>Git / Github</li>
-                </ul>
-            </div>
+            <div class="skillset__right">
+                <div class="tools">
+                    <h3 class="skillset__title">TOOLS</h3>
+                    <ul class="tools__list">
+                        <li><span>Photoshop</span></li>
+                        <li><span>Illustrator</span></li>
+                        <li><span>Visual</span> Studio</li>
+                        <li><span>3ds Max</span></li>
+                        <li><span>SketchUp</span></li>
+                    </ul>
+                </div>
+                <div class="etc">
+                    <h3 class="skillset__title">ETC</h3>
+                    <ul class="etc__list">
+                        <li><span>Git&Github</span></li>
+                        <li><span></span></li>
+                    </ul>
+                </div>
+            </div>            
         </div>
     </section>
 
     <!-- My Work -->
     <section id="mywork">
-        <div class="titles">MY WORK</div>
-        <div class="subtitles">PROJECTS</div>
-        <ul class="mywork__button">
-            <li><button>All</button></li>
-            <li><button>Front-end</button></li>
-            <li><button>Back-end</button></li>
-            <li><button>Mobile</button></li>
-        </ul>
-        <ul class="mywork__item">
-            <li><img src="" alt=""></li>
-            <li><img src="" alt=""></li>
-            <li><img src="" alt=""></li>
-            <li><img src="" alt=""></li>
-            <li><img src="" alt=""></li>
-            <li><img src="" alt=""></li>
-        </ul>
+        <h1 class="titles">MY WORK</h1>
+        <h3 class="subtitles">PROJECTS</h3>
+        <div class="mywork__categories">
+            <button class="category__btn">
+                All <span class="category__count">6</span>
+            </button>
+            <button class="category__btn">
+                Front-end <span class="category__count">2</span>
+            </button>
+            <button class="category__btn">
+                Back-end <span class="category__count">2</span>
+            </button>
+            <button class="category__btn">
+                Mobile <span class="category__count">2</span>
+            </button>
+        </div>
+        <div class="mywork__projects">
+            <a href="" class="project" target="_blank">
+                <img src="imgs/projects/KakaoTalk_20210428_140735389_03.jpg" alt="">
+                <div class="project__description">
+                    <h3>Youtube Site</h3>
+                    <span>Clone coding with HTML and CSS</span>
+                </div>
+            </a>
+            <a href="" class="project" target="_blank">
+                <img src="imgs/projects/KakaoTalk_20210428_140735389_03.jpg  " alt="">
+                <div class="project__description">
+                    <h3>Youtube Site</h3>
+                    <span>Clone coding with HTML and CSS</span>
+                </div>
+            </a>
+            <a href="" class="project" target="_blank">
+                <img src="imgs/projects/KakaoTalk_20210428_140735389_03.jpg" alt="">
+                <div class="project__description">
+                    <h3>Youtube Site</h3>
+                    <span>Clone coding with HTML and CSS</span>
+                </div>
+            </a>
+            <a href="" class="project" target="_blank">
+                <img src="imgs/projects/KakaoTalk_20210428_140735389_03.jpg" alt="">
+                <div class="project__description">
+                    <h3>Youtube Site</h3>
+                    <span>Clone coding with HTML and CSS</span>
+                </div>
+            </a>
+            <a href="" class="project" target="_blank">
+                <img src="imgs/projects/KakaoTalk_20210428_140735389_03.jpg" alt="">
+                <div class="project__description">
+                    <h3>Youtube Site</h3>
+                    <span>Clone coding with HTML and CSS</span>
+                </div>
+            </a>
+            <a href="" class="project" target="_blank">
+                <img src="imgs/projects/KakaoTalk_20210428_140735389_03.jpg" alt="">
+                <div class="project__description">
+                    <h3>Youtube Site</h3>
+                    <span>Clone coding with HTML and CSS</span>
+                </div>
+            </a>
+        </div>
     </section>
 
     <!-- Testimonials -->
     <section id="testimonials">
-        <div class="titles">TESTIMONIALS</div>
-        <div class="subtitles">See what they say about me</div>
-        <div class="testimonials__item">
+        <h1 class="titles">TESTIMONIALS</h1>
+        <h3 class="subtitles">See what they say about me</h3>
+        <div class="testimonials__items">
             <div class="item">
-                <img class="avatar" src="" alt="">
-                <span class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis totam dolore obcaecati tempora ipsam! Quidem, facere dolore dignissimos nostrum saepe, ullam eaque molestiae iure dolorem ut, minima quod repellat expedita.</span>
-                <span class="name">Ellie/TigerSpike</span>
+                <img class="item__avatar" src="imgs/testimonials/people1-200515-154332.jpg" alt="">
+                <div class="item__speechBubble">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, necessitatibus quo? Ea exercitationem eos, quae iste iure, dolorum earum similique ipsum at possimus, quisquam tempora et perspiciatis? Similique, neque fuga.                        
+                    </p>
+                    <p class="name"><a href="">Ellie</a> / Samsung</p>
+                </div>                
             </div>
             <div class="item">
-                <img class="avatar" src="" alt="">
-                <span class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis totam dolore obcaecati tempora ipsam! Quidem, facere dolore dignissimos nostrum saepe, ullam eaque molestiae iure dolorem ut, minima quod repellat expedita.</span>
-                <span class="name">Ellie/TigerSpike</span>
-            </div>            
+                <img class="item__avatar" src="imgs/testimonials/people1-200515-154332.jpg" alt="">
+                <div class="item__speechBubble">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, necessitatibus quo? Ea exercitationem eos, quae iste iure, dolorum earum similique ipsum at possimus, quisquam tempora et perspiciatis? Similique, neque fuga.                        
+                    </p>
+                    <p class="name"><a href="">Ellie</a> / Samsung</p>
+                </div>                
+            </div>     
         </div>
     </section>
 
     <!-- Contact -->
     <section id="contact">
-        <div class="titles">Let's talk</div>
-        <div class="subtitles">ousd52@naver.comf</div>
-        <ul class="contact__icons">
-            <li><i class="fab fa-github-square"></i></li>
-            <li><i class="fab fa-linkedin"></i></li>
-        </ul>
-        <div class="contact__copyright">2021 Gilan·All rights reserved</div>
+        <h1 class="contact__title">Let's talk</h1>
+        <h3 class="contact__email">ousd52@naver.com</h3>
+        <div class="contact__icons">
+            <a href=""><i class="fab fa-github-square"></i></a>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p class="contact__copyright">2021 Gilan·All rights reserved</p>
     </section>
 </body>
 </html>
