@@ -23,11 +23,32 @@
   --weigh-light: 300;
 
   /* Size */
+  --size-border-radius: 30px;
 }
 
 /* Universal tags */
 * {
   box-sizing: border-box;
+}
+
+body {
+  margin: 0 100px;
+  font-family: "Open Sans", sans-serif;
+  cursor: default;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+img {
+  width: 500px;
+  height: 500px;
 }
 
 /* Typography */
@@ -57,4 +78,32 @@ p {
   font-weight: var(--weigh-light);
   color: var(--color-black);
   margin: 4px 0;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.navbar__logo img {
+  width: 25px;
+  height: 25px;
+}
+
+.navbar__menu {
+  display: flex;
+}
+
+.navbar__menu__item {
+  font-size: var(--font-micro);
+  padding: 8px 12px;
+  margin: 0 4px;
+  cursor: pointer;
+  border-radius: var(--size-border-radius);
+}
+
+.navbar__menu__item:hover {
+  background-color: var(--color-blur-white);
 }
