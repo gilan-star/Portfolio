@@ -12,9 +12,9 @@
 
   /* Font size */
   --font-large: 34px;
-  --font-medium: 22px;
-  --font-regular: 18px;
-  --font-small: 16px;
+  --font-medium: 24px;
+  --font-regular: 20px;
+  --font-small: 18px;
   --font-micro: 14px;
 
   /* Font weight */
@@ -76,8 +76,8 @@ h2 {
 }
 
 h3 {
-  font-size: var(--font-regular);
-  font-weight: var(--weigh-regular);
+  font-size: var(--font-small);
+  font-weight: var(--weigh-semi-bold);
   color: var(--color-black);
   margin: 8px 0;
 }
@@ -131,9 +131,6 @@ p {
 /* Home */
 #home {
   margin: var(--padding) 0;
-}
-
-.home__topside {
   display: flex;
   flex-direction: row-reverse;
 }
@@ -147,19 +144,36 @@ p {
   margin-left: var(--padding);
 }
 
-.home__explains {
-  margin: 100px 0;
+.home__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home__left__welcome {
+  display: flex;
+  align-items: center;
+}
+
+.home__left__welcome img {
+  margin-right: 16px;
+}
+
+.home__left img {
+  width: 20px;
+  height: 20px;
 }
 
 .home__contact {
-  font-size: var(--font-small);
+  margin-top: 50px;
+  display: flex;
+  align-self: flex-start;
+  font-size: var(--font-micro);
   font-weight: var(--weigh-light);
   padding: 10px 14px;
   border-radius: 30px;
   background-color: var(--color-purple);
   color: var(--color-white);
-  position: relative;
-  top: -100px;
 }
 
 .home__contact:hover {
