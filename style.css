@@ -6,15 +6,16 @@
   --color-black: #080608;
   --color-purple: #6756a2;
   --color-light-purple: #9385c5;
-  --color-violet: #8c56a2;
+  --color-violet: #c07fdacc;
+  --color-light-violet: #e3bdee98;
   --color-pink: hsl(0, 100%, 81%);
   --color-baby-pink: #ffe7e3;
   --color-powder-blue: #e2e6ff;
   --color-light-grey: #f3f3f3;
   --color-dark-grey: #4d4d4d;
   --color-medium-grey: #e2e2e2;
-  --color-grey: #7c7c7c;
-  --color-yellow: #fff9a3;
+  --color-grey: #999898;
+  --color-yellow: #fdefdc;
 
   /* Font size */
   --font-large: 34px;
@@ -202,7 +203,7 @@ p {
 }
 
 .home__contact:hover {
-  background-color: var(--color-powder-blue);
+  background-color: var(--color-yellow);
   color: var(--color-purple);
 }
 
@@ -229,14 +230,14 @@ p {
   height: 170px;
   line-height: 170px;
   font-size: 70px;
-  color: var(--color-purple);
+  color: var(--color-light-purple);
   border: 1px solid var(--color-light-purple);
   border-radius: 50%;
   margin-bottom: 16px;
 }
 
 .about__items .item__icon:hover i {
-  color: var(--color-pink);
+  color: var(--color-purple);
   transform: scale(1.2);
   transition: all var(--animation-duration) ease;
 }
@@ -287,21 +288,24 @@ p {
 }
 
 /* Skills */
-.skillset {
-  display: flex;
-  background-color: var(--color-violet);
-  color: var(--color-blur-white);
-  margin: 20px 0;
+.skillset__title {
+  color: var(--color-dark-grey);
+  font-weight: var(--weigh-medium);
 }
 
-.skillset__title {
-  color: var(--color-blur-white);
+.skillset {
+  display: flex;
+  color: var(--color-dark-grey);
+  margin: 20px 0;
 }
 
 .skillset__left {
   flex-basis: 60%;
-  background-color: var(--color-purple);
+  border: 1px solid var(--color-powder-blue);
+  border-radius: 30px;
+  background-color: var(--color-powder-blue);
   padding: 16px 40px;
+  margin-right: 10px;
 }
 
 .skill {
@@ -316,13 +320,13 @@ p {
 
 .skill__bar {
   width: 100%;
-  height: 3px;
+  height: 10px;
   background-color: var(--color-grey);
 }
 
 .skill__value {
-  height: 3px;
-  background-color: #dba54e;
+  height: 10px;
+  background-color: var(--color-light-purple);
 }
 
 .skillset__right {
@@ -330,7 +334,16 @@ p {
 }
 
 .tools {
-  background-color: var(--color-powder-blue);
+  border: 1px solid var(--color-baby-pink);
+  border-radius: 30px;
+  background-color: var(--color-baby-pink);
+  margin-bottom: 10px;
+}
+
+.etc {
+  border: 1px solid var(--color-yellow);
+  border-radius: 30px;
+  background-color: var(--color-yellow);
 }
 
 .tools,
@@ -353,33 +366,36 @@ p {
   border: 1px solid var(--color-medium-grey);
   border-radius: 4px;
   font-size: var(--font-micro);
-  padding: 8px 36px;
+  padding: 8px 0;
+  padding-left: 36px;
+  padding-right: 12px;
 }
 
 .category__btn.active,
 .category__btn:hover {
   background-color: var(--color-powder-blue);
-  color: var(--color-white);
+  color: var(--color-purple);
 }
 
-.category__btn.active .category__count,
-.category__btn:hover .category__count {
-  opacity: 1;
-  top: 0;
-}
 .category__count {
+  display: inline-block;
+  position: relative;
   background-color: var(--color-light-purple);
+  color: var(--color-white);
   border: 1px solid var(--color-light-purple);
   border-radius: 50%;
   width: 24px;
   height: 24px;
   line-height: 24px;
-  display: inline-block;
-  position: relative;
-  top: -20px;
-  left: 4px;
+  top: -15px;
   opacity: 0;
   transition: all var(--animation-duration) ease-in;
+}
+
+.category__btn.active .category__count,
+.category__btn:hover .category__count {
+  top: 0;
+  opacity: 1;
 }
 
 .mywork__projects {
@@ -495,7 +511,7 @@ p {
 }
 
 .contact__email {
-  margin-bottom: 100px;
+  margin-bottom: 150px;
   font-weight: var(--weigh-semi-bold);
 }
 
@@ -512,6 +528,7 @@ p {
 .contact__icons {
   font-size: var(--font-medium);
   margin: 24px 0;
+  margin-bottom: 50px;
 }
 
 .contact__icons i {
