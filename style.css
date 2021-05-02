@@ -7,12 +7,13 @@
   --color-purple: #6756a2;
   --color-light-purple: #9385c5;
   --color-violet: #8c56a2;
-  --color-powder-blue: #7ca7ca;
+  --color-pink: #ffe7e3;
+  --color-powder-blue: #e2e6ff;
   --color-light-grey: #f3f3f3;
   --color-dark-grey: #4d4d4d;
   --color-medium-grey: #e2e2e2;
   --color-grey: #7c7c7c;
-  --color-yellow: #fff67d;
+  --color-yellow: #fff9a3;
 
   /* Font size */
   --font-large: 34px;
@@ -438,4 +439,53 @@ p {
   left: 50%;
   margin-left: -12px;
   margin-top: 8px;
+}
+
+/* Testimonials */
+.testimonials__items {
+  margin: 40px;
+}
+
+.testimonials__items .item {
+  display: flex;
+  margin: 32px 0;
+}
+
+.item__avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 30px;
+}
+
+.item__avatar:nth-child(odd) {
+  margin-right: 16px;
+}
+
+.item__avatar:nth-child(even) {
+  margin-left: 16px;
+}
+
+.item__speechBubble {
+  text-align: left;
+  padding: 30px 40px;
+  background-color: var(--color-pink);
+  border-radius: 30px;
+}
+
+.item__speechBubble:nth-child(odd) {
+  background-color: var(--color-powder-blue);
+}
+
+.item__speechBubble h3 {
+  font-weight: var(--weigh-medium);
+}
+
+.item__speechBubble .position {
+  font-size: var(--font-small);
+  color: var(--color-dark-grey);
+}
+
+.item__speechBubble p {
+  font-size: var(--font-micro);
+  color: var(--color-dark-grey);
 }
