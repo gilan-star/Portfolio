@@ -302,9 +302,8 @@ p {
 
 .skillset__left {
   flex-basis: 60%;
-  border: 1px solid var(--color-powder-blue);
+  border: 1px solid var(--color-light-purple);
   border-radius: 30px;
-  background-color: var(--color-powder-blue);
   padding: 16px 40px;
   margin-right: 10px;
 }
@@ -336,16 +335,14 @@ p {
 }
 
 .tools {
-  border: 1px solid var(--color-baby-pink);
+  border: 1px solid var(--color-pink);
   border-radius: 30px;
-  background-color: var(--color-baby-pink);
   margin-bottom: 10px;
 }
 
 .etc {
-  border: 1px solid var(--color-medium-grey);
+  border: 1px solid var(--color-grey);
   border-radius: 30px;
-  background-color: var(--color-medium-grey);
 }
 
 .tools,
