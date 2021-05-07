@@ -108,6 +108,11 @@ p {
   text-align: center;
 }
 
+.section__container {
+  margin: auto;
+  max-width: 1300px;
+}
+
 #navbar {
   margin: auto;
   padding: 16px 130px;
@@ -157,6 +162,14 @@ p {
   text-decoration: underline var(--color-purple) 3px;
   text-underline-offset: 5px;
   color: var(--color-black);
+}
+
+.navbar__toggle-btn {
+  position: absolute;
+  right: 30px;
+  font-size: 24px;
+  color: var(--color-purple);
+  display: none;
 }
 
 /* Home */
@@ -510,7 +523,11 @@ p {
 /* Contact */
 #contact {
   background-color: var(--color-blur-white);
-  padding: 50px 130px;
+  text-align: left;
+}
+
+#contact .section__container {
+  max-width: 1050px;
 }
 
 .contact__email {
@@ -544,4 +561,135 @@ p {
 
 .contact__copyright {
   font-size: var(--font-micro);
+}
+
+/* For below 760px screen width */
+@media screen and (max-width: 760px) {
+  .section {
+    padding: 50px 30px;
+  }
+
+  .navbar__toggle-btn {
+    display: block;
+  }
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 30px;
+  }
+
+  .navbar__menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    display: none;
+  }
+
+  #home {
+    flex-direction: column;
+    padding: 60px 30px;
+  }
+
+  .home__avatar {
+    position: absolute;
+    right: 30px;
+    width: 250px;
+    height: 250px;
+    display: none;
+  }
+
+  .about__items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about__items .item {
+    margin-bottom: 38px;
+  }
+
+  .skillset {
+    flex-direction: column;
+  }
+
+  .skillset__left {
+    margin: 24px 0;
+  }
+
+  .tools {
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+  .category__btn {
+    margin-bottom: 4px;
+  }
+
+  .project {
+    flex-grow: 1;
+  }
+
+  .item__avatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  #contact {
+    padding: 50px 30px;
+  }
+
+  .testimonials__items .item {
+    align-items: inherit;
+  }
+}
+
+/* For between 760x - 1000px screen width */
+@media screen and (max-width: 1000px) {
+  .section {
+    padding: 50px 30px;
+  }
+
+  #navbar {
+    padding: 16px 30px;
+  }
+
+  #home {
+    padding: 60px 30px;
+  }
+
+  .home__left {
+  }
+
+  .home__avatar {
+    margin-left: 40px;
+    right: 30px;
+    width: 370px;
+    height: 370px;
+  }
+
+  .skillset {
+    flex-direction: column;
+  }
+
+  .skillset__left {
+    margin: 24px 0;
+  }
+
+  .tools {
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+  .project {
+    flex-grow: 1;
+  }
+
+  .item__avatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  #contact {
+    padding: 50px 30px;
+  }
 }
