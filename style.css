@@ -114,19 +114,24 @@ p {
 }
 
 #navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: sticky;
   top: 0;
-  padding: 16px 170px;
+  padding: 16px 130px;
   transition: all var(--animation-duration) ease-in-out;
   z-index: 1;
 }
 
+.navbar__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  max-width: 1050px;
+}
+
 #navbar.navbar--dark {
   background-color: var(--color-blur-white);
-  padding: 8px 170px;
+  padding: 8px 130px;
 }
 
 .navbar__logo {
