@@ -631,6 +631,10 @@ p {
     display: none;
   }
 
+  .navbar__menu.open {
+    display: block;
+  }
+
   #home {
     flex-direction: column;
     padding: 60px 30px;

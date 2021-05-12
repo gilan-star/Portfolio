@@ -19,7 +19,14 @@ navbarMenu.addEventListener('click', (event) => {
     if (link == null) {
         return;
     }
+    navbarMenu.classList.remove('open');
     scrollIntoView(link);
+});
+
+// Show navbar menu when the toggle button is clicked
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+    navbarMenu.classList.add('open');
 });
 
 // Handle click on "contact me" button on home
