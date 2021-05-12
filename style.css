@@ -576,6 +576,27 @@ p {
   font-size: var(--font-micro);
 }
 
+/* Arrow Up Button */
+.arrowUpBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 100px;
+  font-size: calc(var(--font-large) * 1.1);
+  color: var(--color-purple);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--animation-duration) ease-in;
+}
+
+.arrowUpBtn:hover {
+  color: var(--color-light-purple);
+}
+
+.arrowUpBtn.visible {
+  opacity: 1;
+  pointer-events: visible;
+}
+
 /* For below 760px screen width */
 @media screen and (max-width: 760px) {
   .section {
@@ -659,6 +680,10 @@ p {
   .testimonials__items .item {
     align-items: inherit;
   }
+
+  .arrowUpBtn {
+    right: 20px;
+  }
 }
 
 /* For between 760x - 1000px screen width */
@@ -713,5 +738,9 @@ p {
 
   #contact {
     padding: 50px 30px;
+  }
+
+  .arrowUpBtn {
+    right: 20px;
   }
 }
