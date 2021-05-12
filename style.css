@@ -16,7 +16,7 @@
   --color-modern-grey: #b8b8b8;
   --color-medium-grey: #e2e2e2;
   --color-grey: #797979;
-  --color-yellow: #fdefdc;
+  --color-yellow: #e7bf68;
 
   /* Font size */
   --font-large: 34px;
@@ -472,20 +472,23 @@ p {
   transform: translateY(0px);
 }
 
-.project__description h3,
+.project__description h3 {
+  color: var(--color-yellow);
+}
+
 .project__description span {
   color: var(--color-white);
 }
 
 .project__description h3:after {
   content: "";
-  width: 25px;
+  width: 50px;
   height: 2px;
   background-color: var(--color-white);
   display: block;
   position: relative;
   left: 50%;
-  margin-left: -12px;
+  transform: translateX(-50%);
   margin-top: 8px;
 }
 
@@ -585,17 +588,17 @@ p {
 /* Arrow Up Button */
 .arrowUpBtn {
   position: fixed;
-  bottom: 30px;
+  bottom: 25px;
   right: 100px;
-  font-size: calc(var(--font-large) * 1.1);
-  color: var(--color-purple);
+  font-size: 30px;
+  color: var(--color-white);
+  background-color: var(--color-purple);
+  border-radius: 50%;
+  padding: 5px 9px;
+  filter: drop-shadow(0 0 1px grey);
   opacity: 0;
   pointer-events: none;
   transition: opacity var(--animation-duration) ease-in;
-}
-
-.arrowUpBtn:hover {
-  color: var(--color-light-purple);
 }
 
 .arrowUpBtn.visible {
@@ -751,5 +754,7 @@ p {
 
   .arrowUpBtn {
     right: 20px;
+    font-size: 22px;
+    padding: 6px 9px;
   }
 }
