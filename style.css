@@ -174,7 +174,7 @@ p {
 
 .navbar__toggle-btn {
   position: absolute;
-  right: 30px;
+  right: 9px;
   font-size: 24px;
   color: var(--color-purple);
   display: none;
@@ -606,10 +606,24 @@ p {
   pointer-events: visible;
 }
 
-/* For below 760px screen width */
-@media screen and (max-width: 760px) {
+/* For below 764px screen width */
+@media screen and (max-width: 764px) {
+  :root {
+    /* Font size */
+    --font-large: 28px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+  }
+
   .section {
-    padding: 50px 30px;
+    padding: 0 20px;
+    padding-bottom: 50px;
+  }
+
+  #navbar {
+    padding: 8px 20px;
   }
 
   .navbar__toggle-btn {
@@ -617,7 +631,11 @@ p {
   }
 
   #navbar {
-    background-color: var(--color-blur-white);
+    background-color: transparent;
+  }
+
+  #navbar.navbar--dark {
+    padding: 8px 20px;
   }
 
   .navbar__menu {
@@ -637,26 +655,57 @@ p {
     opacity: 0.9;
   }
 
+  .navbar__logo__name {
+    font-size: 20px;
+  }
+
+  #navbar {
+    background: url("imgs/background/back9.jpg") center/cover no-repeat;
+  }
+
   #home {
     flex-direction: column;
-    padding: 60px 30px;
+    padding: 0 20px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+
+  .home__left .descriptions {
+    margin-top: 30px;
+  }
+
+  .home__contact {
+    margin-top: 20px;
+    filter: drop-shadow(0 0 1px grey);
   }
 
   .home__avatar {
     position: absolute;
-    right: 30px;
-    width: 250px;
-    height: 250px;
+    margin: 0;
+    top: 230px;
+    left: 20px;
+    width: 200px;
+    height: 200px;
+    border: 0.5px solid var(--color-light-purple);
     display: none;
   }
 
   .about__items {
     flex-direction: column;
     align-items: center;
+    margin: 30px 0;
   }
 
   .about__items .item {
-    margin-bottom: 38px;
+    margin-bottom: 15px;
+  }
+
+  .about__items .item__icon {
+    width: 140px;
+    height: 140px;
+    line-height: 140px;
+    font-size: 60px;
+    margin-bottom: 4px;
   }
 
   .skillset {
@@ -685,12 +734,21 @@ p {
     height: 80px;
   }
 
-  #contact {
-    padding: 50px 30px;
+  #testimonials {
+    padding-bottom: 0;
   }
 
   .testimonials__items .item {
     align-items: inherit;
+  }
+
+  #contact {
+    padding: 50px 30px;
+    padding-bottom: 30px;
+  }
+
+  .contact__icons {
+    margin-bottom: 0;
   }
 
   .arrowUpBtn {
@@ -698,7 +756,7 @@ p {
   }
 }
 
-/* For between 760x - 1000px screen width */
+/* For between 760x - 1000px screen width
 @media screen and (max-width: 1000px) {
   .section {
     padding: 50px 30px;
@@ -757,4 +815,4 @@ p {
     font-size: 22px;
     padding: 6px 9px;
   }
-}
+} */
