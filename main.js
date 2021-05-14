@@ -24,9 +24,9 @@ navbarMenu.addEventListener("click", (event) => {
 });
 
 // Show navbar menu when the toggle button is clicked
-const navbarToggleBtn = document.querySelector(".navbar__toggle-btn");
-navbarToggleBtn.addEventListener("click", () => {
-  navbarMenu.classList.add("open");
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+  navbarMenu.classList.toggle("open");
 });
 
 // Handle click on "contact me" button on home
