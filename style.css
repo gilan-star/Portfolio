@@ -164,6 +164,7 @@ p {
   border-radius: var(--size-border-radius);
 }
 
+.navbar__menu__item.active,
 .navbar__menu__item:hover {
   text-decoration: underline var(--color-purple) 3px;
   text-underline-offset: 5px;
@@ -554,10 +555,6 @@ p {
 .contact__email {
   margin-bottom: 150px;
   font-weight: var(--weigh-semi-bold);
-}
-
-.contact__email i {
-  margin-left: 20px;
 }
 
 .contact__img {
