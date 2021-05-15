@@ -16,8 +16,8 @@
   --color-modern-grey: #b8b8b8;
   --color-medium-grey: #e2e2e2;
   --color-grey: #797979;
-  --color-light-yellow: rgb(236, 241, 166);
-  --color-yellow: rgba(220, 230, 81, 0.959);
+  --color-sky: #b7dfe7;
+  --color-yellow: #eee597;
 
   /* Font size */
   --font-large: 34px;
@@ -232,7 +232,7 @@ p {
 }
 
 .home__contact:hover {
-  background-color: var(--color-light-yellow);
+  background-color: var(--color-powder-blue);
   color: var(--color-purple);
 }
 

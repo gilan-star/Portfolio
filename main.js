@@ -1,6 +1,6 @@
 "use strict";
 
-// Make navbar transparent when it is on the top
+// Make "navbar transparent" when it is on the top
 const navbar = document.querySelector("#navbar");
 const navbarHeight = navbar.getBoundingClientRect().height;
 document.addEventListener("scroll", () => {
@@ -23,7 +23,7 @@ navbarMenu.addEventListener("click", (event) => {
   scrollIntoView(link);
 });
 
-// Show navbar menu when the toggle button is clicked
+// Show navbar menu when the "toggle button" is clicked
 const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
 navbarToggleBtn.addEventListener('click', () => {
   navbarMenu.classList.toggle("open");
@@ -35,14 +35,14 @@ contactBtn.addEventListener("click", () => {
   scrollIntoView("#contact");
 });
 
-// Make home slowly fade to transparent as the window scrolls down
+// Make "home slowly fade" to transparent as the window scrolls down
 const home = document.querySelector("#home");
 const homeHeight = home.getBoundingClientRect().height;
 document.addEventListener("scroll", () => {
   home.style.opacity = 1 - window.scrollY / homeHeight;
 });
 
-// Show Arrow Up Button when scrolling down
+// Show "Arrow Up Button" when scrolling down
 const arrowUpBtn = document.querySelector(".arrowUpBtn");
 document.addEventListener("scroll", () => {
   if (window.scrollY > homeHeight / 2) {
