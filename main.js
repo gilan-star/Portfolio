@@ -142,7 +142,7 @@ const observerCallback = (entries, observer) => {
 const observer = new IntersectionObserver(observerCallback, observerOptions);
 sections.forEach(section => observer.observe(section));
 
-window.addEventListener('scroll', () => {
+window.addEventListener('wheel', () => {
   if (window.scrollY === 0) {
     selectedNavIndex = 0;
   } else if (
