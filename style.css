@@ -115,8 +115,8 @@ p {
 }
 
 #navbar {
-  position: sticky;
-  top: 0;
+  position: fixed;
+  width: 100%;
   padding: 8px 130px;
   transition: all var(--animation-duration) ease-in-out;
   z-index: 1;
@@ -185,6 +185,7 @@ p {
   display: flex;
   flex-direction: row-reverse;
   padding: 60px 130px;
+  padding-top: 110px;
 }
 
 .home__avatar {
@@ -676,16 +677,12 @@ p {
     padding-bottom: 50px;
   }
 
-  #navbar {
-    padding: 8px 20px;
-  }
-
   .navbar__toggle-btn {
     display: block;
   }
 
   #navbar {
-    background-color: transparent;
+    padding: 8px 20px;
   }
 
   #navbar.navbar--dark {
@@ -713,14 +710,10 @@ p {
     font-size: 20px;
   }
 
-  #navbar {
-    background: url("imgs/background/back9.jpg") center/cover no-repeat;
-  }
-
   #home {
     flex-direction: column;
     padding: 0 20px;
-    padding-top: 20px;
+    padding-top: 60px;
     padding-bottom: 50px;
     text-align: center;
   }

@@ -101,9 +101,7 @@ const sectionIds = [
 ];
 
 const sections = sectionIds.map(id => document.querySelector(id));
-const navItems = sectionIds.map(id => 
-  document.querySelector(`[data-link="${id}"]`)
-  );
+const navItems = sectionIds.map(id => document.querySelector(`[data-link="${id}"]`));
 
 let selectedNavIndex = 0;
 let selectedNavItem = navItems[0];
@@ -135,7 +133,7 @@ const observerCallback = (entries, observer) => {
       } else {
         selectedNavIndex = index -1;
       }
-    }
+    };
   });
 };
 
