@@ -389,7 +389,7 @@ p {
   border: 1px solid var(--color-medium-grey);
   border-radius: 4px;
   font-size: var(--font-micro);
-  padding: 8px 36px;
+  padding: 8px 32px;
   margin-bottom: 4px;
 }
 
@@ -783,7 +783,7 @@ p {
   }
 
   .category__count {
-    right: 20px;
+    right: 10px;
   }
 
   .category__btn.selected .category__count,
