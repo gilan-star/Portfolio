@@ -645,7 +645,6 @@ p {
   }
 
   .project {
-    flex-grow: 0.8;
   }
 
   .item__avatar {
@@ -804,7 +803,6 @@ p {
   }
 
   .project {
-    flex-grow: 0.8;
   }
 
   .item__avatar {
