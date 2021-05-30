@@ -20,11 +20,11 @@
   --color-yellow: #eee597;
 
   /* Font size */
-  --font-large: 34px;
-  --font-medium: 24px;
+  --font-large: 36px;
+  --font-medium: 26px;
   --font-regular: 20px;
-  --font-small: 18px;
-  --font-micro: 14px;
+  --font-small: 20px;
+  --font-micro: 16px;
 
   /* Font weight */
   --weigh-semi-bold: 600;
@@ -607,6 +607,15 @@ p {
 
 /* For between 768x - 1000px screen width */
 @media (min-width: 768px) and (max-width: 1000px) {
+  :root {
+    /* Font size */
+    --font-large: 34px;
+    --font-medium: 24px;
+    --font-regular: 22px;
+    --font-small: 18px;
+    --font-micro: 14px;
+  }
+
   .section {
     padding: 50px 30px;
   }
@@ -621,7 +630,7 @@ p {
 
   #home {
     padding: 60px 30px;
-    padding-top: 110px;
+    padding-top: 150px;
   }
 
   .home__avatar {
@@ -712,7 +721,7 @@ p {
   #home {
     flex-direction: column;
     padding: 0 20px;
-    padding-top: 60px;
+    padding-top: 80px;
     padding-bottom: 10px;
     text-align: center;
   }
@@ -740,7 +749,7 @@ p {
     position: absolute;
     align-self: center;
     margin: auto;
-    top: 230px;
+    top: 250px;
     width: 170px;
     height: 170px;
     border: 0.5px solid var(--color-light-purple);
