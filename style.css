@@ -22,6 +22,7 @@
 	/* Font size */
 	--font-large: 36px;
 	--font-medium: 26px;
+	--font-logo: 24px;
 	--font-regular: 20px;
 	--font-small: 20px;
 	--font-micro: 16px;
@@ -145,7 +146,7 @@ p {
 
 .navbar__logo__name {
 	margin-left: 8px;
-	font-size: var(--font-regular);
+	font-size: var(--font-logo);
 	font-weight: var(--weigh-semi-bold);
 }
 
