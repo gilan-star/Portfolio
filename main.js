@@ -151,3 +151,28 @@ window.addEventListener('wheel', () => {
   }
   selectNavItem(navItems[selectedNavIndex]);
 });
+
+// Language changing button
+const LangFirstBtn = document.querySelector('.lang.first');
+const Testi1 = document.querySelector('.testi1');
+LangFirstBtn.addEventListener('click', () => {
+  if (LangFirstBtn.innerHTML === '한국어로 보기') {
+    LangFirstBtn.innerHTML = 'In English';
+    Testi1.innerHTML = '동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세';
+  } else {
+    LangFirstBtn.innerHTML = '한국어로 보기';
+    Testi1.innerHTML = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, atque ex sequi nobis, adipiscicupiditate fuga, error est nemo dicta quis architecto corrupti assumenda totam optio modi quidem animi minus?';
+  }
+});
+
+const LangSecondBtn = document.querySelector('.lang.second');
+const Testi2 = document.querySelector('.testi2');
+LangSecondBtn.addEventListener('click', () => {
+  if (LangSecondBtn.innerHTML === '한국어로 보기') {
+    LangSecondBtn.innerHTML = 'In English';
+    Testi2.innerHTML = '저는 질문을 잘하는 사람이 개발을 잘 할 수 있다고 생각합니다. 제가 봐 온 기란님은 질문을 잘하는 사람입니다. 늘 질문하기에 앞서 자신이 할 수 있는 많은 다양한 시도를 거치고, 문제점을 파악한 후, 피드백을 요청합니다. 단순히 질문을 많이 하는 것이 아니라, 시행착오 끝에 문제를 파악한 후 질문합니다. 문제에 대한 호기심, 그것을 해결하고자 하는 끈기를 가진 기란님은 앞으로 개발자로서 잘 성장할 것이라고 믿습니다. 성장 가능성이 넘치는 개발자, 기란님을 추천합니다.';
+  } else {
+    LangSecondBtn.innerHTML = '한국어로 보기';
+    Testi2.innerHTML = 'I think that a person who has good questioning skill can be a good developer. Gilan is a good questioner. Before asking a question, she tries as many different things as she can to figure out a problem, and then ask someone for feedbacks. Gilan, who is curious about problems and has the perseverance to solve them, I believe that she will be a fast growing developer in the future. I recommend Gilan, a developer full of growth potential.';
+  }
+});
